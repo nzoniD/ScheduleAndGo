@@ -15,3 +15,9 @@ class CarTask:
     def __repr__(self):
         return "-> " + self._destination + " expected arrival: " + str(self._arrival_time) + " (" \
                + str(self._deadline) + ")"
+
+    def get_arrival_time(self):
+        return self._arrival_time
+
+    def get_destination(self):
+        return self._destination
